@@ -29,3 +29,11 @@ Paso 1 : al importar proyecto, como primer paso se deben instalar las dependenci
 
 Paso 2 : iniciar archivo mediante CLI
 //   node index.js acceso -k=123
+
+--------------------------------
+GitHub Page
+--------------------------------
+
+despliegue completo del proyecto al haber realizado los pasos del requerimiento 1
+
+https://imdamiancortes.github.io/Desafio_Black_and_White/
