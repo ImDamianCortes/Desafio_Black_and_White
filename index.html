@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="http://localhost:3000/style">
+
+    <title>Desafio - Back and white</title>
+</head>
+
+<body>
+    <div class="container row my-4 px-4 min-vw-100">
+        <h2 class="card-title text-center mb-4">Desafío - Black and White</h2>
+        <!-- Descripcion del desafio -->
+        <section class="col-12 col-lg-6 py-4">
+            <div class="card h-100">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">Descripcion</h4>
+                    <p class="card-text">La empresa Black and White Spa está promocionando una campaña para las redes sociales en donde quieren ofrecer un sitio web que permita escribir la URL de una imagen de internet y que ésta sea procesada por el servidor para ser devuelta en blanco y negro.</p>
+                    <p>Deberás crear un servidor que disponibiliza una ruta raíz que devuelva un HTML con el formulario para ingresar la URL de la imagen con estilos CSS de un documento interno en los archivos del servidor. El formulario debe redirigir a otra ruta del servidor que procese la imagen y la devuelva en blanco y negro. Como muestran las siguientes imágenes:</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-12 col-lg-6 py-4">
+            <div class="card">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 text-center">Requerimientos</h4>
+                    <ol>
+                        <li>El servidor debe ser levantado por instrucción de una aplicación  Node  que use el paquete  Yargs  para capturar los argumentos en la línea de comando.  Se deberá ejecutar el comando para levantar el servidor solo si el valor de la propiedad “key” es la correcta (123).</li><br>
+                        <li>El servidor debe disponibilizar una ruta raíz que devuelva un HTML con el formulario para el ingreso de la URL de la imagen a tratar.</li><br>
+                        <li>Los estilos de este HTML deben ser definidos por un archivo CSS alojado en el servidor.</li><br>
+                        <li>El formulario debe redirigir a otra ruta del servidor que deberá procesar la imagen
+                            tomada por la URL enviada del formulario con el paquete Jimp. La imagen debe ser 
+                            procesada en escala de grises, con calidad a un 60% y redimensionada a unos 350px 
+                            de ancho. Posteriormente debe ser guardada con nombre “newImg.jpg” y devuelta al 
+                            cliente.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido -->
+        <section class="col-12 col-lg-8 py-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-4">Black and White Spa</h3>
+                    <form action="http://localhost:3000/cargar">
+                        <div class="my-5">
+                          <label for="url" class="form-label">Imagen URL:</label>
+                          <input type="url" class="form-control" name="imagen" placeholder="http://i.pinimg.com/origin">
+                        </div>
+                        <button type="submit" class="btn btn-primary d-block mx-auto mb-4">Subir imagen al servidor</button>
+                      </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
